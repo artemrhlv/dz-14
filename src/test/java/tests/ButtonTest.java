@@ -15,7 +15,7 @@ import java.time.Duration;
 public class ButtonTest extends BaseTest {
     private final static int DURATION_TO_WAIT_DEFAULT = 4;
     private final By contextButtons = By.cssSelector("#item-4");
-    private final By clickMeButton = By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[3]/button");
+    private final By clickMeButton = By.xpath("//div[@class=\"mt-4\"]/button[text()=\"Click Me\"]");
     protected WebDriver driver = new ChromeDriver();
 
     public WebElement getElement(final By by) {
